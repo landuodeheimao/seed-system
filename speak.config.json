@@ -1,0 +1,18 @@
+{
+  "_说明": "★ 空白种子：七实这边**不给默认嘴**——模型和角色档由用的人自己接。填下面三项就能说话。",
+  "_怎么填": "endpoint＝任何 OpenAI 兼容地址；key＝你的令牌（本地 Ollama 填 ollama）；model＝模型名。card 可以留空（留空就是没角色档，会偏向普通助手味）。",
+  "_优先级": "命令行 ＞ 环境变量（SPEAK_ENDPOINT／SPEAK_KEY／SPEAK_MODEL／SPEAK_CARD）＞ 本文件 ＞ 内置默认",
+
+  "endpoint": "http://localhost:11434/v1",
+  "key": "ollama",
+  "model": "",
+  "card": "",
+
+  "temperature": 0.8,
+  "max_tokens": 220,
+
+  "limits": {
+    "trait": 12,
+    "cards": 6
+  }
+}

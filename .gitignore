@@ -1,0 +1,30 @@
+# Runtime state — a grown character is *yours*; keep it out of git if you fork this
+.active.json
+.speak-log.jsonl
+.switch-backup-*/
+.drift/
+.dbg*/
+.smoke/
+*.bak-*
+tmp-*.cjs
+
+# Locks & snapshots are per-character state
+.core.lock.json
+.core.lock.*.json
+.snapshot.json
+.snapshot.*.json
+.snapshot.*.json
+
+# os / editor
+.DS_Store
+Thumbs.db
+*.log
+node_modules/
+.vscode/
+.idea/
+
+# NOTE: sprout.json and speak.config.json ARE committed as blank templates
+# so that "clone → run" works. If you fill them with a real character or a
+# real API token, uncomment the two lines below before committing again.
+# sprout.json
+# speak.config.json

@@ -1,0 +1,42 @@
+{
+  "name": "seed-system",
+  "version": "1.0.0",
+  "description": "A character seed that grows by itself, and plugs into any OpenAI-compatible model.",
+  "type": "commonjs",
+  "license": "AGPL-3.0-or-later",
+  "engines": { "node": ">=18" },
+  "bin": {
+    "seed-grow": "grow.cjs",
+    "seed-sleep": "sleep.cjs",
+    "seed-speak": "speak.cjs",
+    "seed-tune": "tune.cjs",
+    "seed-guard": "guard.cjs",
+    "seed-use": "use.cjs",
+    "seed-export": "export.cjs",
+    "seed-dead-check": "dead-seed.cjs",
+    "seed-reset": "reset.cjs",
+    "seed-test-instinct": "test-instinct.cjs",
+    "seed-test-drift": "test-drift.cjs"
+  },
+  "scripts": {
+    "show": "node grow.cjs show",
+    "test": "node test-instinct.cjs && node test-drift.cjs 1",
+    "speak": "node speak.cjs"
+  },
+  "keywords": [
+    "character",
+    "ai-companion",
+    "persona",
+    "memory",
+    "local-llm",
+    "openai-compatible",
+    "seed",
+    "agent"
+  ],
+  "files": [
+    "*.cjs",
+    "*.md",
+    "*.json",
+    "docs/"
+  ]
+}
